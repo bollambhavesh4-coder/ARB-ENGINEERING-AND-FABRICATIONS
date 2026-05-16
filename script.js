@@ -84,16 +84,16 @@ document.addEventListener('DOMContentLoaded', () => {
     revealOnScroll(); // Trigger once on load
 });
 const images = [
-    "images/work/Image(1).jpeg",
-    "images/work/Image(2).jpeg",
-    "images/work/Image(3).jpeg",
-    "images/work/Image(4).jpeg",
-    "images/work/Image(5).jpeg",
-    "images/work/Image(6).jpeg",
-    "images/work/Image(7).jpeg",
-    "images/work/Image(8).jpeg",
-    "images/work/Image(9).jpeg",
-    "images/work/Image(10).jpeg"
+    "images/work/work(1).jpeg",
+    "images/work/work(2).jpeg",
+    "images/work/work(3).jpeg",
+    "images/work/work(4).jpeg",
+    "images/work/work(5).jpeg",
+    "images/work/work(6).jpeg",
+    "images/work/work(7).jpeg",
+    "images/work/work(8).jpeg",
+    "images/work/work(9).jpeg",
+    "images/work/work(10).jpeg"
 ];
 
 let currentImage = 0;
