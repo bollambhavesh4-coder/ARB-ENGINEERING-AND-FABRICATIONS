@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealOnScroll(); // Trigger once on load
 });
 const images = [
-    "images/work/work(1).jpg",
+    "images/work/Image(1).jpg",
     "images/work/work(2).jpg",
     "images/work/work(3).jpg",
     "images/work/work(4).jpg",
