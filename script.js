@@ -83,3 +83,23 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Trigger once on load
 });
+const images = [
+    "images/work/work1.jpg",
+    "images/work/work2.jpg",
+    "images/work/work3.jpg",
+    "images/work/work4.jpg",
+    "images/work/work5.jpg",
+    "images/work/work6.jpg",
+    "images/work/work7.jpg",
+    "images/work/work8.jpg",
+    "images/work/work9.jpg",
+    "images/work/work10.jpg"
+];
+
+let currentImage = 0;
+const sliderImage = document.getElementById("slider-image");
+
+setInterval(() => {
+    currentImage = (currentImage + 1) % images.length;
+    sliderImage.src = images[currentImage];
+}, 3000); // Change every 3 seconds
