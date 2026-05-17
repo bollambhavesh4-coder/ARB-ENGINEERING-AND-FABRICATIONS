@@ -801,7 +801,7 @@ footer {
 .clients-slider {
     flex: 1;
     min-width: 300px;
-    max-height: 500px;   /* adjust to match your client list height */
+    max-height: 300px;   /* adjust to match your client list height */
     overflow: hidden;    /* hides images outside the box */
     border-radius: 12px;
 }
