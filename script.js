@@ -82,24 +82,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Trigger once on load
+     // Clients Image Slider
+    const slides = document.querySelectorAll('.slide');
+    const dotsContainer = document.getElementById('sliderDots');
+    
+    if (slides.length > 0 && dotsContainer) {
+        let currentSlide = 0;
+
+        // Create dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+        
+        function goToSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            dotsContainer.children[currentSlide].classList.remove('active');
+
+            currentSlide = index;
+
+            slides[currentSlide].classList.add('active');
+            dotsContainer.children[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            goToSlide((currentSlide + 1) % slides.length);
+        }
+
+        // Auto-advance every 2.5 seconds
+        setInterval(nextSlide, 2500);
+    }
 });
-const images = [
-    "images/work/work(1).jpeg",
-    "images/work/work(2).jpeg",
-    "images/work/work(3).jpeg",
-    "images/work/work(4).jpeg",
-    "images/work/work(5).jpeg",
-    "images/work/work(6).jpeg",
-    "images/work/work(7).jpeg",
-    "images/work/work(8).jpeg",
-    "images/work/work(9).jpeg",
-    "images/work/work(10).jpeg"
-];
 
-let currentImage = 0;
-const sliderImage = document.getElementById("slider-image");
-
-setInterval(() => {
-    currentImage = (currentImage + 1) % images.length;
-    sliderImage.src = images[currentImage];
-}, 2000); // Change every 2 seconds
