@@ -750,7 +750,7 @@ footer {
 .clients-content {
     display: flex;
     gap: 40px;
-    align-items: center;   /* aligns image with text vertically */
+    align-items: stretch;   /* aligns image with text vertically */
 }
 
 .clients-text {
