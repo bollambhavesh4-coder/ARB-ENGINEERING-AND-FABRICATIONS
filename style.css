@@ -765,7 +765,7 @@ footer {
 
 .clients-image img {
     max-width: 100%;       /* image will not exceed its container width */
-    max-height: 300px;     /* set this to match your client data section height */
+    max-height: 200px;     /* set this to match your client data section height */
     width: auto;
     height: auto;
     object-fit: contain;   /* keeps the full image visible without stretching */
@@ -780,7 +780,7 @@ footer {
 
 .clients-image img {
     max-width: 100%;
-    max-height: 350px;
+    max-height: 200px;
     width: auto;
     height: auto;
     object-fit: contain;
