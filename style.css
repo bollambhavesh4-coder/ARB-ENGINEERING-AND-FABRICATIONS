@@ -760,7 +760,7 @@ footer {
 .clients-image {
     flex: 1;
     display: flex;
-    justify-content: stretch;  
+    justify-content: center;  
 }
 
 .clients-image img {
@@ -785,4 +785,30 @@ footer {
     height: auto;
     object-fit: contain;
     border-radius: 10px;
+}
+.clients-content {
+    display: flex;
+    gap: 40px;
+    align-items: stretch; /* makes both columns equal height */
+    flex-wrap: wrap;
+}
+
+.client-list {
+    flex: 1;
+    min-width: 300px;
+}
+
+.clients-slider {
+    flex: 1;
+    min-width: 300px;
+    max-height: 500px;   /* adjust to match your client list height */
+    overflow: hidden;    /* hides images outside the box */
+    border-radius: 12px;
+}
+
+.clients-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* fills the box without distortion */
+    display: block;
 }
