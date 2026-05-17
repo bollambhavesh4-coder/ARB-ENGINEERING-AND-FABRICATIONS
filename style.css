@@ -746,6 +746,7 @@ footer {
 .clients-slider {
     flex: 1;
     min-width: 300px;
+    height: 450px;
     border-radius: 16px;
     overflow: hidden;
     position: relative;
@@ -772,10 +773,12 @@ footer {
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
     border-radius: 16px;
+    z-index: 1;
 }
 
 .slide.active {
     opacity: 1;
+    z-index: 2;
 }
 
 /* Dots */
