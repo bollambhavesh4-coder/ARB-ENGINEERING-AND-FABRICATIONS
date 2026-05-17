@@ -102,4 +102,4 @@ const sliderImage = document.getElementById("slider-image");
 setInterval(() => {
     currentImage = (currentImage + 1) % images.length;
     sliderImage.src = images[currentImage];
-}, 2000); // Change every 2 seconds
+}, 1500); // Change every 1.5 seconds
