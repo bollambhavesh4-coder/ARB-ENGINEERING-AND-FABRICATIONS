@@ -771,3 +771,18 @@ footer {
     object-fit: contain;   /* keeps the full image visible without stretching */
     border-radius: 10px;
 }
+.clients-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.clients-image img {
+    max-width: 100%;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
