@@ -813,7 +813,7 @@ footer {
     }
 
     .clients-slider {
-        height: 300px;
+        height: auto;
         /* fixed height on mobile */
     }
 }
