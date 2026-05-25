@@ -745,7 +745,7 @@ footer {
 /* --- Slider --- */
 .clients-slider {
     flex: 1;
-    min-width: 650px;
+    min-width: 350px;
     height: 600px;
     border-radius: 16px;
     overflow: hidden;
@@ -843,13 +843,12 @@ footer {
     }
 
     .clients-slider {
-        height: 280px;
-        /* fixed height on mobile */
+        height: 280px; /* fixed height on mobile */
+        min-width: 100%;
       .slider-btn {
         width: 34px;
         height: 34px;
         font-size: 0.9rem;
     }
 }
-    }
-}
+    
