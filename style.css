@@ -838,18 +838,40 @@ footer {
 
 /* Responsive adjustment for clients section */
 @media (max-width: 768px) {
-    .clients-content {
-        flex-direction: column;
+    .clients-content {      /* 1. Force the container to stack properly */
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important
     }
+    /* 2. Force the slider to the top and give it strict height */
     .clients-slider {
-        order: -1; /* THIS MOVES THE IMAGES TO THE TOP! */
-        height: 280px !important; 
-        min-width: 0 !important;
+        order: -1 !important;/* THIS MOVES THE IMAGES TO THE TOP! */
+        position: relative !important;
+        height: 320px !important; 
+        min-width: 100% !important;
         width: 100% !important;
         display: block !important;
         overflow: hidden !important;
-         margin-bottom: 20px; /* Adds space between images and the list below it */
+         margin-bottom: 30px !important; /* Adds space between images and the list below it */
     }
+  /* 3. Force the container inside the slider */
+    .slider-container {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+   /* 4. Force the images themselves */
+    .slide {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        display: block !important;
+    }
+  
     .slider-btn {
         width: 34px;
         height: 34px;
