@@ -841,12 +841,14 @@ footer {
     .clients-content {
         flex-direction: column;
     }
-
     .clients-slider {
-        height: 280px; /* fixed height on mobile */
+        height: 280px !important; 
         min-width: 0 !important;
         width: 100% !important;
-      .slider-btn {
+        display: block !important;
+        overflow: hidden !important;
+    }
+    .slider-btn {
         width: 34px;
         height: 34px;
         font-size: 0.9rem;
