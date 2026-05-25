@@ -817,7 +817,7 @@ footer {
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
+    display: none; /*before it is flex */
     gap: 8px;
     z-index: 5;
 }
