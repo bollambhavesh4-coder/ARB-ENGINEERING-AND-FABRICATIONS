@@ -844,7 +844,8 @@ footer {
 
     .clients-slider {
         height: 280px; /* fixed height on mobile */
-        min-width: 100%;
+        min-width: 0 !important;
+        width: 100% !important;
       .slider-btn {
         width: 34px;
         height: 34px;
