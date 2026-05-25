@@ -842,11 +842,13 @@ footer {
         flex-direction: column;
     }
     .clients-slider {
+        order: -1; /* THIS MOVES THE IMAGES TO THE TOP! */
         height: 280px !important; 
         min-width: 0 !important;
         width: 100% !important;
         display: block !important;
         overflow: hidden !important;
+         margin-bottom: 20px; /* Adds space between images and the list below it */
     }
     .slider-btn {
         width: 34px;
