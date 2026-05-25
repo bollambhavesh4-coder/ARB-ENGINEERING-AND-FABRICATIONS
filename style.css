@@ -852,7 +852,9 @@ footer {
         width: 100% !important;
         display: block !important;
         overflow: hidden !important;
-         margin-bottom: 30px !important; /* Adds space between images and the list below it */
+        margin-bottom: 30px !important; /* Adds space between images and the list below it */
+        border: 5px solid red !important;
+        background-colour: blue !important;
     }
   /* 3. Force the container inside the slider */
     .slider-container {
