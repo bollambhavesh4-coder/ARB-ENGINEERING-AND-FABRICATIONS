@@ -745,8 +745,8 @@ footer {
 /* --- Slider --- */
 .clients-slider {
     flex: 1;
-    min-width: 300px;
-    height: 450px;
+    min-width: 450px;
+    height: 600px;
     border-radius: 16px;
     overflow: hidden;
     position: relative;
