@@ -848,13 +848,15 @@ footer {
         order: -1 !important;/* THIS MOVES THE IMAGES TO THE TOP! */
         position: relative !important;
         height: 320px !important; 
+        min-height: 320px !important;  /* NEW: Forces it open */
+        flex-shrink: 0 !important;     /* NEW: Tells phone not to squish it */
         min-width: 100% !important;
         width: 100% !important;
         display: block !important;
         overflow: hidden !important;
         margin-bottom: 30px !important; /* Adds space between images and the list below it */
-        border: 5px solid red !important;
-        background-colour: blue !important;
+       /* border: 5px solid red !important;
+        background-colour: blue !important;  THIS IS FOR TESTING IMAGES */
     }
   /* 3. Force the container inside the slider */
     .slider-container {
